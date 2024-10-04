@@ -19,7 +19,7 @@
       font-family: 'math', sans-serif; 
       font-size: 1.5rem; 
       font-weight: bold; 
-      color: #092f36 !important; 
+      color: #00d4ff !important; 
       text-transform: uppercase; 
     }
 
@@ -31,7 +31,7 @@
     }
 
     .navbar-nav .nav-link:hover {
-      background-color: rgba(0, 212, 255, 0.2);
+      background-color: rgba(13, 216, 155, 0.2);
       transform: scale(1.05);
       color: #00d4ff;
     }
@@ -150,7 +150,7 @@
 <body>
 
 
-  <nav class="navbar navbar-expand-lg navbar-white bg-white">
+  <nav class="navbar navbar-expand-lg navbar-white bg-#EAD8B1">
     <div class="container">
       <a class="navbar-brand" href="#">Abbysal Origin</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -159,19 +159,20 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#about-us">About Us</a>
+            <a class="nav-link text-white" href="#about-us">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#learning-outcomes">Learning Outcomes</a>
+            <a class="nav-link text-white" href="#learning-outcomes">Learning Outcomes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#login">Login</a>
+            <a class="nav-link text-white" href="#login">Login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#signup">Sign Up</a>
+            <a class="nav-link text-white" href="#signup">Sign Up</a>
           </li>
         </ul>
       </div>
+      
     </div>
   </nav>
 
@@ -185,20 +186,167 @@
     </div>
   </section>
 
+  <style>
+  
+    #about-us h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
 
-  <section id="about-us" class="section bg-dark text-white">
+    #about-us .team-img {
+      border-radius: 50%;
+      transition: transform 0.3s ease;
+    }
+
+    #about-us .team-img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+ 
+  <section id="about-us" class="section bg-#3A6D8C text-white py-5">
     <div class="container">
-      <h2>About Our Sea Environment Project</h2>
-      <p>Our mission is to raise awareness about the ocean's ecosystems, marine life, and the importance of conserving the deep sea. Dive in with us as we explore the mysteries of the ocean!</p>
+      <h2 class="text-center">About Our Sea Environment Project</h2>
+      <p class="text-center lead mb-5">Our mission is to raise awareness about ocean ecosystems, marine life, and the importance of conserving the deep sea. Dive in with us as we explore the mysteries of the ocean!</p>
+      
+  
+      <div class="row mb-5">
+        <div class="col-md-4">
+          <div class="card bg-light text-dark">
+            <div class="card-body">
+              <h5 class="card-title">Conserving Marine Life</h5>
+              <p class="card-text">We aim to protect marine biodiversity by raising awareness of the threats facing the ocean and fostering a sense of responsibility toward marine conservation.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-light text-dark">
+            <div class="card-body">
+              <h5 class="card-title">Exploring Deep-Sea Ecosystems</h5>
+              <p class="card-text">Our project focuses on studying hydrothermal vents, chemosynthesis, and the incredible life forms that thrive in extreme ocean environments.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-light text-dark">
+            <div class="card-body">
+              <h5 class="card-title">Promoting Sustainability</h5>
+              <p class="card-text">We encourage sustainable practices in ocean exploration and management to ensure the long-term health of marine ecosystems for future generations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+     
+      <div class="row text-center mb-5">
+        <h3 class="mb-4">Meet Our Team</h3>
+        <div class="col-md-4">
+          <img src="WhatsApp Image 2024-09-10 at 20.59.13_4d665af7.jpg" class="team-img img-fluid mb-3" alt="Team Member 1">
+          <h5>Nafis Forkan</h5>
+          <p>Unity Developer</p>
+        </div>
+        <div class="col-md-4">
+          <img src="WhatsApp Image 2024-09-10 at 21.01.29_cdb82253.jpg" class="team-img img-fluid mb-3" alt="Team Member 2">
+          <h5>Albid Nawar</h5>
+          <p>Team Leader</p>
+        </div>
+        <div class="col-md-4">
+          <img src="IMG_20210307_153958 (1).jpg" class="team-img img-fluid mb-3" alt="Team Member 3">
+          <h5>Shuvo Roy</h5>
+          <p>Frontend Developer</p>
+        </div>
+        <div class="col-md-4">
+          <img src="WhatsApp Image 2024-09-10 at 21.00.45_df5e4fde.jpg" class="team-img img-fluid mb-3" alt="Team Member 3">
+          <h5>Mustasin Ahmed</h5>
+          <p>Backend Developer</p>
+        </div>
+        <div class="col-md-4">
+          <img src="WhatsApp Image 2024-10-04 at 09.55.37_f1aad83b.jpg" class="team-img img-fluid mb-3" alt="Team Member 3">
+          <h5>Borhan Uddin Siyam</h5>
+          <p>UI/UX Designer</p>
+        </div>
+        <div class="col-md-4">
+          <img src="WhatsApp Image 2024-10-04 at 09.50.56_aa726151.jpg" class="team-img img-fluid mb-3" alt="Team Member 3">
+          <h5>Rukshana Akter Mili</h5>
+          <p>Researcher</p>
+        </div>
+        
+      </div>
+      
+     
+      <div class="text-center">
+        <a href="#more-info" class="btn btn-primary btn-lg">Learn More About the Project</a>
+      </div>
     </div>
   </section>
 
+  <style>
+    
+    .card:hover {
+      transform: scale(1.0); 
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+      transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    }
 
+    .card-img-top {
+      transition: transform 0.3s ease; 
+    }
+
+    .card:hover .card-img-top {
+      transform: scale(1.1); 
+    }
+  </style>
   <section id="learning-outcomes" class="section bg-light text-dark">
-    <div class="container">
-      <h2>Learning Outcomes</h2>
-      <p>Explore fascinating underwater species and unique ecosystems. Understand how deep-sea environments function and their role in global sustainability.</p>
+    <div class="container mt-5">
+      <div class="row">
+        
+        
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card h-100">
+            <img src="_0403fb39-0d03-4e17-bd18-823fead5f189.jpeg" class="card-img-top" alt="Understanding Chemosynthesis">
+            <div class="card-body">
+              <h5 class="card-title">Understanding Chemosynthesis</h5>
+              <p class="card-text">The game offers an interactive environment where players learn about chemosynthesis through exploration, resource management, and ecosystem interactions.</p>
+            </div>
+          </div>
+        </div>
+  
+        
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card h-100">
+            <img src="_3a4fcbd0-6454-4221-9cc8-41d34e62156c.jpeg" class="card-img-top" alt="Extreme Ecosystems">
+            <div class="card-body">
+              <h5 class="card-title">Extreme Ecosystems</h5>
+              <p class="card-text">The game introduces players to unique adaptations and challenges of life in deep-sea hydrothermal vents, showing how organisms survive extreme conditions.</p>
+            </div>
+          </div>
+        </div>
+  
+       
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card h-100">
+            <img src="_df1861dd-5cce-4cc4-bf19-17d6f7cfa833.jpeg" class="card-img-top" alt="Ecosystem Management">
+            <div class="card-body">
+              <h5 class="card-title">Ecosystem Management</h5>
+              <p class="card-text">Players balance ecosystems, learning about chemical cycles and species interdependencies in extreme environments. This teaches sustainability and problem-solving.</p>
+            </div>
+          </div>
+        </div>
+  
+        
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card h-100">
+            <img src="_05f6c895-bcac-4f64-b2ff-838eb3ff91ec.jpeg" class="card-img-top" alt="Engaging Scientific Concepts">
+            <div class="card-body">
+              <h5 class="card-title">Engaging Scientific Concepts</h5>
+              <p class="card-text">Through quests and storylines, the game makes learning about chemosynthesis engaging, motivating players to explore astrobiology and extreme life forms.</p>
+            </div>
+          </div>
+        </div>
+  
+      </div>
     </div>
+  
+    
   </section>
 
 
